@@ -3,7 +3,7 @@
  * @Company: kaochong
  * @Date: 2020-07-23 18:23:21
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-07-24 11:51:32
+ * @LastEditTime: 2020-07-24 11:52:49
 --> 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@
     <button onclick="start()">start</button>
 </body>
 </html>
-<script src="../webassembly/sonic.js"></script>
+<script src="./webassembly/sonic.js"></script>
 <script src="./player.js"></script>
 <script type="text/javascript">
     var ModuleSonic = {};
@@ -100,7 +100,7 @@
             ModuleSonic.setSpeed = setSpeed;
             ModuleSonic.wasmDsp = wasmDsp;
         });
-        req.open('GET', '../webassembly/sonic.wasm');
+        req.open('GET', './webassembly/sonic.wasm');
         req.send();
     }
     loadWasm();
