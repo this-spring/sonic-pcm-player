@@ -2727,7 +2727,7 @@ function abort(what) {
   throw output;
 }
 Module['abort'] = abort;
-Module["onRuntimeInitialized"] = onRuntimeInitialized;
+
 if (Module['preInit']) {
   if (typeof Module['preInit'] == 'function') Module['preInit'] = [Module['preInit']];
   while (Module['preInit'].length > 0) {
@@ -2737,7 +2737,7 @@ if (Module['preInit']) {
 
 
 Module["noExitRuntime"] = true;
-
+Module["onRuntimeInitialized"] = onRuntimeInitialized;
 run();
 
 

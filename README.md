@@ -3,7 +3,7 @@
  * @Company: kaochong
  * @Date: 2020-07-24 11:45:29
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-07-24 14:12:17
+ * @LastEditTime: 2020-07-24 14:32:52
 --> 
 ## sonic-pcm-player  
 
@@ -23,6 +23,27 @@ open url:  https://this-spring.github.io/sonic-pcm-player/index.html
 
 click 选择文件->获取buffer->start  
 
+### sonic build  
+
+1. git clone https://github.com/waywardgeek/sonic.git  
+
+2. make clean & make & make install  
+
+3. sh webassembly.sh(make sure install emcc)  
+
+## source  
+
+c:  sonic/wrapper_sonic.c  
+wasm:  webassembly/sonic.wasm  
+胶水js: webassembly/sonic.js  
+player.js: ./player.js  
+index.html: ./index.html
+
+
+## api  
+
+TODO
+
 ## github  
 
-https://github.com/this-spring/sonic-pcm-player
+https://github.com/this-spring/sonic-pcm-player  
