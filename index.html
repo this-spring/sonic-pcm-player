@@ -1,0 +1,108 @@
+<!--
+ * @Author: xiuquanxu
+ * @Company: kaochong
+ * @Date: 2020-07-23 18:23:21
+ * @LastEditors: xiuquanxu
+ * @LastEditTime: 2020-07-24 11:35:00
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Webassembly sonic demo</h2>
+    <input type="file" name="fileDemo" id="fileDemo"/>
+    <button onclick="getBuffer()">获取buffer</button>
+    <button onclick="start()">start</button>
+</body>
+</html>
+<script src="../webassembly/sonic.js"></script>
+<script src="./player.js"></script>
+<script src="pcm-player.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var ModuleSonic = {};
+    var c_write_ptr = null;
+    var c_reader_ptr = null;
+    var handle = null;
+    var buffer = null;
+    var player = null;
+   
+    function getBuffer() {
+        var resultFile = document.getElementById("fileDemo").files[0];
+            if (resultFile) {
+                var reader = new FileReader();
+
+                reader.readAsArrayBuffer(resultFile);
+                reader.onload = function (e) {
+                    console.log(e.target.result);
+                    buffer = e.target.result;
+                };
+            }  
+    }
+
+    function download(pcm) {
+        const data = pcm;
+        const fd = new Blob([data]);
+        const oa = document.createElement('a');
+        oa.href = window.URL.createObjectURL(fd);
+        oa.download = 'sonic-web-pcm.pcm';
+        // oa.click();
+    }
+
+    // Module["onRuntimeInitialized"] = onRuntimeInitialized;
+    function start() {
+        // ModuleSonic.setSpeed(handle, 0.8);
+        // player = new PcmPlayer();
+        // player.play()
+        var player = new PCMPlayer({
+            encoding: '16bitInt',
+            channels: 1,
+            sampleRate: 44800,
+            flushingTime: 1000
+        });
+
+// Now feed PCM data into player getting from websocket or ajax whatever the transport you are using.
+        const needWriteBuffer = new Uint8Array(buffer.slice(0, 48000 * 10));
+        console.log(needWriteBuffer);
+        ModuleSonic.wasmDsp.HEAPU8.set(needWriteBuffer, c_write_ptr);
+        var writeRes = ModuleSonic.handleRate(handle, c_write_ptr, 48000 * 10, c_reader_ptr, 48000 * 10);
+        console.log("writeRes:", writeRes, c_reader_ptr);
+        const pcm = ModuleSonic.wasmDsp.HEAP16.slice(c_reader_ptr / 2, (c_reader_ptr + writeRes) / 2);
+        // const player_pcm = new Uint8Array(pcm);
+        // console.log("player pcm:", player_pcm);
+        // download(pcm);
+        // console.log(pcm);
+        // player.write(pcm)
+        player.feed(pcm);
+
+        // const res = c_reader_ptr.slice();
+    }
+
+    function onRuntimeInitialized() {
+        c_write_ptr = ModuleSonic.wasmDsp._malloc(1024 * 1024);
+        c_reader_ptr = ModuleSonic.wasmDsp._malloc(1024 * 1024);
+        handle = ModuleSonic.init(48000, 1, 10);
+     }
+    function loadWasm(cb) {
+        var req = new XMLHttpRequest();
+        req.responseType = 'arraybuffer';
+        req.addEventListener('load', () => {
+            var wasmBuffer = req.response;
+            WebSonic['wasmBinary'] = wasmBuffer;
+            var wasmDsp = WebSonic({ wasmBinary: WebSonic.wasmBinary });
+            var sonicInit = wasmDsp.cwrap('sonicInit', ['number'], ['number', 'number', 'number']);
+            var pcmHandleRate = wasmDsp.cwrap('pcmHandleRateBySonic', ['number'], ['number', 'number', 'number', 'number', 'number']);
+            var setSpeed = wasmDsp.cwrap('setSpeed', null, ['number', 'number']);
+            ModuleSonic.init = sonicInit;
+            ModuleSonic.handleRate = pcmHandleRate;
+            ModuleSonic.setSpeed = setSpeed;
+            ModuleSonic.wasmDsp = wasmDsp;
+        });
+        req.open('GET', '../webassembly/sonic.wasm');
+        req.send();
+    }
+    loadWasm();
+</script>
