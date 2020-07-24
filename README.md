@@ -29,7 +29,7 @@ click 选择文件->获取buffer->start
 
 2. make clean & make & make install  
 
-3. sh webassembly.sh(make sure install emcc)  
+3. sh webassembly.sh(make sure install emsdk)  
 
 ## source  
 
