@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+<!--
+ * @Author: xiuquanxu
+ * @Company: kaochong
+ * @Date: 2020-07-24 11:45:29
+ * @LastEditors: xiuquanxu
+ * @LastEditTime: 2020-07-24 14:12:17
+--> 
+## sonic-pcm-player  
 
-You can use the [editor on GitHub](https://github.com/this-spring/sonic-pcm-player/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+PCM realizes double speed playback through sonic Library. play by AudioContext.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Use  
 
-### Markdown
+### step1  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+download test-pcm-web  
 
-```markdown
-Syntax highlighted code block
+### step2  
 
-# Header 1
-## Header 2
-### Header 3
+open url:  https://this-spring.github.io/sonic-pcm-player/index.html  
 
-- Bulleted
-- List
+### step3  
 
-1. Numbered
-2. List
+click 选择文件->获取buffer->start  
 
-**Bold** and _Italic_ and `Code` text
+## github  
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/this-spring/sonic-pcm-player/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+https://github.com/this-spring/sonic-pcm-player
