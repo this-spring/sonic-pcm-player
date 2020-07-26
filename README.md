@@ -3,7 +3,7 @@
  * @Company: kaochong
  * @Date: 2020-07-24 11:45:29
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-07-24 14:32:52
+ * @LastEditTime: 2020-07-26 13:37:02
 --> 
 ## sonic-pcm-player  
 
@@ -43,6 +43,9 @@ index.html: ./index.html
 ## api  
 
 TODO
+
+## vx  
+<img src="./vx.jpg"/>
 
 ## github  
 

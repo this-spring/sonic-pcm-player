@@ -85,7 +85,7 @@
         c_reader_ptr = ModuleSonic.wasmDsp._malloc(1024 * 1024);
         handle = ModuleSonic.init(48000, 1, 10);
      }
-    function loadWasm(cb) {
+    function loadWasm() {
         var req = new XMLHttpRequest();
         req.responseType = 'arraybuffer';
         req.addEventListener('load', () => {
