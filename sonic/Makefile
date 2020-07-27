@@ -6,7 +6,7 @@
 # malloc if -pthread is specified.
 
 # Set this to 0 if you do not want to link in spectrogram generation.
-USE_SPECTROGRAM=1
+USE_SPECTROGRAM=0
 SONAME=soname
 UNAME := $(shell uname)
 ifeq ($(UNAME), Darwin)

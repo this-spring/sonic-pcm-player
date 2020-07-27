@@ -3,7 +3,7 @@
  * @Company: kaochong
  * @Date: 2020-07-24 18:29:09
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-07-27 15:48:54
+ * @LastEditTime: 2020-07-27 18:54:08
  */ 
 #include <stdlib.h>
 #include <stdio.h>
@@ -39,6 +39,7 @@ uint8_t* init(int inputSampleRate, int outSampleRate, int numChannel) {
   }
   opus2pcm->resample = InitRsData(inputSampleRate, outSampleRate);
   opus2pcm->sonic_handle = sonicCreateStream(outSampleRate, numChannel);
+  sonicSetSpeed(opus2pcm->sonic_handle, 2);
   // 为in_data和out_data申请空间
   opus2pcm->in_data = (uint8_t *)malloc(sizeof(char) * INPUT_MAX_LEN);
   return (uint8_t *)opus2pcm;
@@ -54,13 +55,17 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
   opus_int16 pcm_content[MAX_FRAME_SIZE * CHANNELS];
   // copy sonic后结果
   int after_sonic_pos = 0;
-  uint8_t after_sonic[4410 * 5];
+  uint8_t after_sonic[4410 * 5 * 100];
   printf(" input_len:%d\n", input_len);
-  while (position < input_len) {
+  int cout = 0;
+  while (position < input_len && cout <= 500) {
+    cout += 1;
     data_size = o2p_p->in_data[position];
+    printf(" data_size:%d cout:%d\n", data_size, cout);
     memcpy(payload_content, o2p_p->in_data + position + 1, data_size);
     // 解码opus
     frame_size = opus_decode(o2p_p->opus_decoder, payload_content, data_size, pcm_content, output_samples, 0);
+    printf(" frame_size:%d\n", frame_size);
     unsigned char pcm_bytes[frame_size * CHANNELS * 2];
     if (frame_size < 0) {
       return ERROR;
@@ -73,16 +78,24 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
     // 重采样
     uint8_t after_reasmple[48000];
     int outputSampleLength = SrcLinear3((short *)pcm_bytes, (short *)after_reasmple, i, 2, o2p_p->resample);
+
+    printf(" outputSampleLength:%d\n", outputSampleLength);
     // sonic倍速
-    int write_res = sonicWriteShortToStream(o2p_p->sonic_handle, (short *)after_reasmple, output_samples);
+    int write_res = sonicWriteShortToStream(o2p_p->sonic_handle, (short *)after_reasmple, outputSampleLength);
+    printf(" write_res:%d\n", write_res);
     if (write_res != 1) {
       return ERROR;
     }
-    int read_res = sonicReadShortFromStream(o2p_p->sonic_handle, (short *)after_sonic, outputSampleLength);
+    unsigned char sonic_res[44100 * 2];
+    int read_res = sonicReadShortFromStream(o2p_p->sonic_handle, (short *)sonic_res, outputSampleLength);
+    printf(" read_res:%d\n", read_res);
     if (read_res != 0) {
-      memcpy(after_sonic + after_sonic_pos, after_reasmple, read_res * 2);
-      after_sonic_pos += read_res;
+      printf(" copy to after_sonic");
+      memcpy(after_sonic + after_sonic_pos, sonic_res, read_res * 2);
+      after_sonic_pos += read_res * 2;
     }
+    position += 1 + data_size;
+    printf(" position: %d, after_sonic_pos:%d\n", position, after_sonic_pos);
   }
   memcpy(output, after_sonic, after_sonic_pos);
   return after_sonic_pos;
@@ -91,9 +104,9 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
 int main() {
   FILE *fin = NULL;
   FILE *fout = NULL;
-  fin = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/output.opus", "rb");
+  fin = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/test.opus", "rb");
   fout = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/output.pcm", "wb");
-  int read_len = 48000 * 20;
+  int read_len = 35000 * 2;
   uint8_t read_content[read_len];
   fread(read_content, read_len, 1, fin);
   // 
@@ -101,6 +114,7 @@ int main() {
   // 返回容器
   uint8_t pcm_res[1024 * 1024];
   int res_len = MakePcmStream(o2p_p, read_content, read_len, pcm_res);
+  printf(" res_len:%d\n", res_len);
   fwrite(pcm_res, res_len, 1, fout);
-  return 0;
+  return 1;
 }
