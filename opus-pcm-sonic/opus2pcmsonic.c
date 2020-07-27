@@ -101,20 +101,20 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
   return after_sonic_pos;
 }
 
-int main() {
-  FILE *fin = NULL;
-  FILE *fout = NULL;
-  fin = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/test.opus", "rb");
-  fout = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/output.pcm", "wb");
-  int read_len = 35000 * 2;
-  uint8_t read_content[read_len];
-  fread(read_content, read_len, 1, fin);
-  // 
-  uint8_t *o2p_p = init(48000, 44100, 1);
-  // 返回容器
-  uint8_t pcm_res[1024 * 1024];
-  int res_len = MakePcmStream(o2p_p, read_content, read_len, pcm_res);
-  printf(" res_len:%d\n", res_len);
-  fwrite(pcm_res, res_len, 1, fout);
-  return 1;
-}
+// int main() {
+//   FILE *fin = NULL;
+//   FILE *fout = NULL;
+//   fin = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/test.opus", "rb");
+//   fout = fopen("/Users/xuxiuquan/mygithub/sonic-pcm-player/opus-pcm-sonic/output.pcm", "wb");
+//   int read_len = 35000 * 2;
+//   uint8_t read_content[read_len];
+//   fread(read_content, read_len, 1, fin);
+//   // 
+//   uint8_t *o2p_p = init(48000, 44100, 1);
+//   // 返回容器
+//   uint8_t pcm_res[1024 * 1024];
+//   int res_len = MakePcmStream(o2p_p, read_content, read_len, pcm_res);
+//   printf(" res_len:%d\n", res_len);
+//   fwrite(pcm_res, res_len, 1, fout);
+//   return 1;
+// }
