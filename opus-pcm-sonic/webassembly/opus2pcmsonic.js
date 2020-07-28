@@ -1860,7 +1860,7 @@ var ASM_CONSTS = [];
 
 STATIC_BASE = GLOBAL_BASE;
 
-STATICTOP = STATIC_BASE + 34464;
+STATICTOP = STATIC_BASE + 34480;
 /* global initializers */  __ATINIT__.push();
 
 
@@ -1869,7 +1869,7 @@ STATICTOP = STATIC_BASE + 34464;
 
 
 
-var STATIC_BUMP = 34464;
+var STATIC_BUMP = 34480;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 
@@ -2754,6 +2754,7 @@ function abort(what) {
   throw output;
 }
 Module['abort'] = abort;
+Module['onRuntimeInitialized'] = onRuntimeInitialized;
 
 if (Module['preInit']) {
   if (typeof Module['preInit'] == 'function') Module['preInit'] = [Module['preInit']];
@@ -2764,7 +2765,7 @@ if (Module['preInit']) {
 
 
 Module["noExitRuntime"] = true;
-Module['onRuntimeInitialized'] = onRuntimeInitialized;
+
 run();
 
 

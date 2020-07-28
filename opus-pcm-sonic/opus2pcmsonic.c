@@ -3,7 +3,7 @@
  * @Company: kaochong
  * @Date: 2020-07-24 18:29:09
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-07-27 18:54:08
+ * @LastEditTime: 2020-07-28 10:54:17
  */ 
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,7 +17,7 @@
 
 const int MAX_FRAME_SIZE = 6 * 690;
 const int CHANNELS = 1;
-const int INPUT_MAX_LEN = 256 * 2; // opus的长度为：一个字节
+const int INPUT_MAX_LEN = 48000; // opus的长度为：一个字节
 
 opus_int32 output_samples = 48000;
 
@@ -39,10 +39,17 @@ uint8_t* init(int inputSampleRate, int outSampleRate, int numChannel) {
   }
   opus2pcm->resample = InitRsData(inputSampleRate, outSampleRate);
   opus2pcm->sonic_handle = sonicCreateStream(outSampleRate, numChannel);
-  sonicSetSpeed(opus2pcm->sonic_handle, 2);
+  sonicSetSpeed(opus2pcm->sonic_handle, 0.75);
   // 为in_data和out_data申请空间
   opus2pcm->in_data = (uint8_t *)malloc(sizeof(char) * INPUT_MAX_LEN);
+  opus2pcm->out_data = (uint8_t *)malloc(sizeof(char) * INPUT_MAX_LEN);
   return (uint8_t *)opus2pcm;
+}
+
+
+void setSpeed(uint8_t* dec, int speed) {
+  as_opus2pcm_t *o2p_p = (as_opus2pcm_t *)dec;
+  sonicSetSpeed(o2p_p->sonic_handle, speed);
 }
 
 int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) {
@@ -61,7 +68,7 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
   while (position < input_len && cout <= 500) {
     cout += 1;
     data_size = o2p_p->in_data[position];
-    printf(" data_size:%d cout:%d\n", data_size, cout);
+    printf(" data_size:%d cout:%d position:%d\n", data_size, cout, position);
     memcpy(payload_content, o2p_p->in_data + position + 1, data_size);
     // 解码opus
     frame_size = opus_decode(o2p_p->opus_decoder, payload_content, data_size, pcm_content, output_samples, 0);

@@ -1,0 +1,3008 @@
+ input_len:70000
+ data_size:19 cout:1
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 20, after_sonic_pos:0
+ data_size:95 cout:2
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 116, after_sonic_pos:0
+ data_size:100 cout:3
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 217, after_sonic_pos:0
+ data_size:103 cout:4
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:239
+ copy to after_sonic position: 321, after_sonic_pos:478
+ data_size:98 cout:5
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:232
+ copy to after_sonic position: 420, after_sonic_pos:942
+ data_size:98 cout:6
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 519, after_sonic_pos:1826
+ data_size:85 cout:7
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:127
+ copy to after_sonic position: 605, after_sonic_pos:2080
+ data_size:91 cout:8
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:292
+ copy to after_sonic position: 697, after_sonic_pos:2664
+ data_size:87 cout:9
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 785, after_sonic_pos:2664
+ data_size:90 cout:10
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:220
+ copy to after_sonic position: 876, after_sonic_pos:3104
+ data_size:81 cout:11
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:222
+ copy to after_sonic position: 958, after_sonic_pos:3548
+ data_size:92 cout:12
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:309
+ copy to after_sonic position: 1051, after_sonic_pos:4166
+ data_size:90 cout:13
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:202
+ copy to after_sonic position: 1142, after_sonic_pos:4570
+ data_size:87 cout:14
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:276
+ copy to after_sonic position: 1230, after_sonic_pos:5122
+ data_size:88 cout:15
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 1319, after_sonic_pos:6002
+ data_size:88 cout:16
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:83
+ copy to after_sonic position: 1408, after_sonic_pos:6168
+ data_size:90 cout:17
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 1499, after_sonic_pos:6168
+ data_size:93 cout:18
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 1593, after_sonic_pos:7052
+ data_size:89 cout:19
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:342
+ copy to after_sonic position: 1683, after_sonic_pos:7736
+ data_size:83 cout:20
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 1767, after_sonic_pos:7736
+ data_size:85 cout:21
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:280
+ copy to after_sonic position: 1853, after_sonic_pos:8296
+ data_size:83 cout:22
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:145
+ copy to after_sonic position: 1937, after_sonic_pos:8586
+ data_size:80 cout:23
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:188
+ copy to after_sonic position: 2018, after_sonic_pos:8962
+ data_size:89 cout:24
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:276
+ copy to after_sonic position: 2108, after_sonic_pos:9514
+ data_size:83 cout:25
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:258
+ copy to after_sonic position: 2192, after_sonic_pos:10030
+ data_size:81 cout:26
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 2274, after_sonic_pos:10914
+ data_size:86 cout:27
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:174
+ copy to after_sonic position: 2361, after_sonic_pos:11262
+ data_size:84 cout:28
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 2446, after_sonic_pos:11262
+ data_size:92 cout:29
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:141
+ copy to after_sonic position: 2539, after_sonic_pos:11544
+ data_size:87 cout:30
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:247
+ copy to after_sonic position: 2627, after_sonic_pos:12038
+ data_size:91 cout:31
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:338
+ copy to after_sonic position: 2719, after_sonic_pos:12714
+ data_size:92 cout:32
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:338
+ copy to after_sonic position: 2812, after_sonic_pos:13390
+ data_size:93 cout:33
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 2906, after_sonic_pos:13390
+ data_size:82 cout:34
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:143
+ copy to after_sonic position: 2989, after_sonic_pos:13676
+ data_size:83 cout:35
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:424
+ copy to after_sonic position: 3073, after_sonic_pos:14524
+ data_size:84 cout:36
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 3158, after_sonic_pos:14524
+ data_size:89 cout:37
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:373
+ copy to after_sonic position: 3248, after_sonic_pos:15270
+ data_size:78 cout:38
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:304
+ copy to after_sonic position: 3327, after_sonic_pos:15878
+ data_size:77 cout:39
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 3405, after_sonic_pos:15878
+ data_size:82 cout:40
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 3488, after_sonic_pos:16762
+ data_size:78 cout:41
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:268
+ copy to after_sonic position: 3567, after_sonic_pos:17298
+ data_size:81 cout:42
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 3649, after_sonic_pos:17298
+ data_size:77 cout:43
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 3727, after_sonic_pos:18178
+ data_size:85 cout:44
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:162
+ copy to after_sonic position: 3813, after_sonic_pos:18502
+ data_size:86 cout:45
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 3900, after_sonic_pos:18502
+ data_size:72 cout:46
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:306
+ copy to after_sonic position: 3973, after_sonic_pos:19114
+ data_size:80 cout:47
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:220
+ copy to after_sonic position: 4054, after_sonic_pos:19554
+ data_size:84 cout:48
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:155
+ copy to after_sonic position: 4139, after_sonic_pos:19864
+ data_size:85 cout:49
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 4225, after_sonic_pos:20744
+ data_size:81 cout:50
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:30
+ copy to after_sonic position: 4307, after_sonic_pos:20804
+ data_size:82 cout:51
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:388
+ copy to after_sonic position: 4390, after_sonic_pos:21580
+ data_size:84 cout:52
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 4475, after_sonic_pos:21580
+ data_size:73 cout:53
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:293
+ copy to after_sonic position: 4549, after_sonic_pos:22166
+ data_size:81 cout:54
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:177
+ copy to after_sonic position: 4631, after_sonic_pos:22520
+ data_size:78 cout:55
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:219
+ copy to after_sonic position: 4710, after_sonic_pos:22958
+ data_size:86 cout:56
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:297
+ copy to after_sonic position: 4797, after_sonic_pos:23552
+ data_size:86 cout:57
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:126
+ copy to after_sonic position: 4884, after_sonic_pos:23804
+ data_size:85 cout:58
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:319
+ copy to after_sonic position: 4970, after_sonic_pos:24442
+ data_size:78 cout:59
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:128
+ copy to after_sonic position: 5049, after_sonic_pos:24698
+ data_size:77 cout:60
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:251
+ copy to after_sonic position: 5127, after_sonic_pos:25200
+ data_size:80 cout:61
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:183
+ copy to after_sonic position: 5208, after_sonic_pos:25566
+ data_size:79 cout:62
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 5288, after_sonic_pos:26450
+ data_size:76 cout:63
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:143
+ copy to after_sonic position: 5365, after_sonic_pos:26736
+ data_size:79 cout:64
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:169
+ copy to after_sonic position: 5445, after_sonic_pos:27074
+ data_size:79 cout:65
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:220
+ copy to after_sonic position: 5525, after_sonic_pos:27514
+ data_size:82 cout:66
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:240
+ copy to after_sonic position: 5608, after_sonic_pos:27994
+ data_size:84 cout:67
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:240
+ copy to after_sonic position: 5693, after_sonic_pos:28474
+ data_size:87 cout:68
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 5781, after_sonic_pos:29358
+ data_size:85 cout:69
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:10
+ copy to after_sonic position: 5867, after_sonic_pos:29378
+ data_size:84 cout:70
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:215
+ copy to after_sonic position: 5952, after_sonic_pos:29808
+ data_size:91 cout:71
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:250
+ copy to after_sonic position: 6044, after_sonic_pos:30308
+ data_size:77 cout:72
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:110
+ copy to after_sonic position: 6122, after_sonic_pos:30528
+ data_size:81 cout:73
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:220
+ copy to after_sonic position: 6204, after_sonic_pos:30968
+ data_size:82 cout:74
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 6287, after_sonic_pos:31852
+ data_size:85 cout:75
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:192
+ copy to after_sonic position: 6373, after_sonic_pos:32236
+ data_size:90 cout:76
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 6464, after_sonic_pos:32236
+ data_size:82 cout:77
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 6547, after_sonic_pos:33116
+ data_size:83 cout:78
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:212
+ copy to after_sonic position: 6631, after_sonic_pos:33540
+ data_size:79 cout:79
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 6711, after_sonic_pos:33540
+ data_size:81 cout:80
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:328
+ copy to after_sonic position: 6793, after_sonic_pos:34196
+ data_size:82 cout:81
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:328
+ copy to after_sonic position: 6876, after_sonic_pos:34852
+ data_size:89 cout:82
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 6966, after_sonic_pos:34852
+ data_size:74 cout:83
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:326
+ copy to after_sonic position: 7041, after_sonic_pos:35504
+ data_size:79 cout:84
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:325
+ copy to after_sonic position: 7121, after_sonic_pos:36154
+ data_size:85 cout:85
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 7207, after_sonic_pos:36154
+ data_size:90 cout:86
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:319
+ copy to after_sonic position: 7298, after_sonic_pos:36792
+ data_size:88 cout:87
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:316
+ copy to after_sonic position: 7387, after_sonic_pos:37424
+ data_size:83 cout:88
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:315
+ copy to after_sonic position: 7471, after_sonic_pos:38054
+ data_size:83 cout:89
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 7555, after_sonic_pos:38054
+ data_size:80 cout:90
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:318
+ copy to after_sonic position: 7636, after_sonic_pos:38690
+ data_size:83 cout:91
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:319
+ copy to after_sonic position: 7720, after_sonic_pos:39328
+ data_size:88 cout:92
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 7809, after_sonic_pos:39328
+ data_size:87 cout:93
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:319
+ copy to after_sonic position: 7897, after_sonic_pos:39966
+ data_size:80 cout:94
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:317
+ copy to after_sonic position: 7978, after_sonic_pos:40600
+ data_size:87 cout:95
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 8066, after_sonic_pos:40600
+ data_size:91 cout:96
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:314
+ copy to after_sonic position: 8158, after_sonic_pos:41228
+ data_size:98 cout:97
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:303
+ copy to after_sonic position: 8257, after_sonic_pos:41834
+ data_size:81 cout:98
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:305
+ copy to after_sonic position: 8339, after_sonic_pos:42444
+ data_size:85 cout:99
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 8425, after_sonic_pos:42444
+ data_size:74 cout:100
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:345
+ copy to after_sonic position: 8500, after_sonic_pos:43134
+ data_size:75 cout:101
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:434
+ copy to after_sonic position: 8576, after_sonic_pos:44002
+ data_size:74 cout:102
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 8651, after_sonic_pos:44002
+ data_size:73 cout:103
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 8725, after_sonic_pos:44882
+ data_size:70 cout:104
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:194
+ copy to after_sonic position: 8796, after_sonic_pos:45270
+ data_size:70 cout:105
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 8867, after_sonic_pos:45270
+ data_size:70 cout:106
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:314
+ copy to after_sonic position: 8938, after_sonic_pos:45898
+ data_size:79 cout:107
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 9018, after_sonic_pos:45898
+ data_size:76 cout:108
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:289
+ copy to after_sonic position: 9095, after_sonic_pos:46476
+ data_size:74 cout:109
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 9170, after_sonic_pos:47356
+ data_size:75 cout:110
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:121
+ copy to after_sonic position: 9246, after_sonic_pos:47598
+ data_size:78 cout:111
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 9325, after_sonic_pos:47598
+ data_size:72 cout:112
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:288
+ copy to after_sonic position: 9398, after_sonic_pos:48174
+ data_size:75 cout:113
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:251
+ copy to after_sonic position: 9474, after_sonic_pos:48676
+ data_size:77 cout:114
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 9552, after_sonic_pos:49560
+ data_size:77 cout:115
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:143
+ copy to after_sonic position: 9630, after_sonic_pos:49846
+ data_size:73 cout:116
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 9704, after_sonic_pos:49846
+ data_size:77 cout:117
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 9782, after_sonic_pos:50726
+ data_size:69 cout:118
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:20
+ copy to after_sonic position: 9852, after_sonic_pos:50766
+ data_size:77 cout:119
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:350
+ copy to after_sonic position: 9930, after_sonic_pos:51466
+ data_size:71 cout:120
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:378
+ copy to after_sonic position: 10002, after_sonic_pos:52222
+ data_size:73 cout:121
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 10076, after_sonic_pos:52222
+ data_size:72 cout:122
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:116
+ copy to after_sonic position: 10149, after_sonic_pos:52454
+ data_size:72 cout:123
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:373
+ copy to after_sonic position: 10222, after_sonic_pos:53200
+ data_size:88 cout:124
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:248
+ copy to after_sonic position: 10311, after_sonic_pos:53696
+ data_size:79 cout:125
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 10391, after_sonic_pos:54576
+ data_size:80 cout:126
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:57
+ copy to after_sonic position: 10472, after_sonic_pos:54690
+ data_size:88 cout:127
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 10561, after_sonic_pos:54690
+ data_size:90 cout:128
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:278
+ copy to after_sonic position: 10652, after_sonic_pos:55246
+ data_size:91 cout:129
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:278
+ copy to after_sonic position: 10744, after_sonic_pos:55802
+ data_size:91 cout:130
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:118
+ copy to after_sonic position: 10836, after_sonic_pos:56038
+ data_size:80 cout:131
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 10917, after_sonic_pos:56918
+ data_size:86 cout:132
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:297
+ copy to after_sonic position: 11004, after_sonic_pos:57512
+ data_size:75 cout:133
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 11080, after_sonic_pos:57512
+ data_size:87 cout:134
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:314
+ copy to after_sonic position: 11168, after_sonic_pos:58140
+ data_size:80 cout:135
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:308
+ copy to after_sonic position: 11249, after_sonic_pos:58756
+ data_size:74 cout:136
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 11324, after_sonic_pos:58756
+ data_size:84 cout:137
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:305
+ copy to after_sonic position: 11409, after_sonic_pos:59366
+ data_size:87 cout:138
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 11497, after_sonic_pos:60250
+ data_size:80 cout:139
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:163
+ copy to after_sonic position: 11578, after_sonic_pos:60576
+ data_size:86 cout:140
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 11665, after_sonic_pos:60576
+ data_size:82 cout:141
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:307
+ copy to after_sonic position: 11748, after_sonic_pos:61190
+ data_size:90 cout:142
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 11839, after_sonic_pos:62074
+ data_size:81 cout:143
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:189
+ copy to after_sonic position: 11921, after_sonic_pos:62452
+ data_size:87 cout:144
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 12009, after_sonic_pos:62452
+ data_size:84 cout:145
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:325
+ copy to after_sonic position: 12094, after_sonic_pos:63102
+ data_size:87 cout:146
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 12182, after_sonic_pos:63102
+ data_size:77 cout:147
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:335
+ copy to after_sonic position: 12260, after_sonic_pos:63772
+ data_size:80 cout:148
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:344
+ copy to after_sonic position: 12341, after_sonic_pos:64460
+ data_size:82 cout:149
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 12424, after_sonic_pos:64460
+ data_size:78 cout:150
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:359
+ copy to after_sonic position: 12503, after_sonic_pos:65178
+ data_size:81 cout:151
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:381
+ copy to after_sonic position: 12585, after_sonic_pos:65940
+ data_size:80 cout:152
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 12666, after_sonic_pos:65940
+ data_size:88 cout:153
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:399
+ copy to after_sonic position: 12755, after_sonic_pos:66738
+ data_size:86 cout:154
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 12842, after_sonic_pos:66738
+ data_size:84 cout:155
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:425
+ copy to after_sonic position: 12927, after_sonic_pos:67588
+ data_size:84 cout:156
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 13012, after_sonic_pos:67588
+ data_size:89 cout:157
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 13102, after_sonic_pos:68468
+ data_size:89 cout:158
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:5
+ copy to after_sonic position: 13192, after_sonic_pos:68478
+ data_size:74 cout:159
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:416
+ copy to after_sonic position: 13267, after_sonic_pos:69310
+ data_size:78 cout:160
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 13346, after_sonic_pos:69310
+ data_size:73 cout:161
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:409
+ copy to after_sonic position: 13420, after_sonic_pos:70128
+ data_size:75 cout:162
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 13496, after_sonic_pos:70128
+ data_size:68 cout:163
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 13565, after_sonic_pos:71008
+ data_size:72 cout:164
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:53
+ copy to after_sonic position: 13638, after_sonic_pos:71114
+ data_size:67 cout:165
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 13706, after_sonic_pos:71994
+ data_size:72 cout:166
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:95
+ copy to after_sonic position: 13779, after_sonic_pos:72184
+ data_size:79 cout:167
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:113
+ copy to after_sonic position: 13859, after_sonic_pos:72410
+ data_size:77 cout:168
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:335
+ copy to after_sonic position: 13937, after_sonic_pos:73080
+ data_size:77 cout:169
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 14015, after_sonic_pos:73960
+ data_size:77 cout:170
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:17
+ copy to after_sonic position: 14093, after_sonic_pos:73994
+ data_size:74 cout:171
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 14168, after_sonic_pos:74874
+ data_size:79 cout:172
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:169
+ copy to after_sonic position: 14248, after_sonic_pos:75212
+ data_size:71 cout:173
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 14320, after_sonic_pos:75212
+ data_size:68 cout:174
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:165
+ copy to after_sonic position: 14389, after_sonic_pos:75542
+ data_size:73 cout:175
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:352
+ copy to after_sonic position: 14463, after_sonic_pos:76246
+ data_size:71 cout:176
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:352
+ copy to after_sonic position: 14535, after_sonic_pos:76950
+ data_size:69 cout:177
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 14605, after_sonic_pos:76950
+ data_size:75 cout:178
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:249
+ copy to after_sonic position: 14681, after_sonic_pos:77448
+ data_size:82 cout:179
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:249
+ copy to after_sonic position: 14764, after_sonic_pos:77946
+ data_size:73 cout:180
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:114
+ copy to after_sonic position: 14838, after_sonic_pos:78174
+ data_size:79 cout:181
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 14918, after_sonic_pos:79054
+ data_size:76 cout:182
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:69
+ copy to after_sonic position: 14995, after_sonic_pos:79192
+ data_size:79 cout:183
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:230
+ copy to after_sonic position: 15075, after_sonic_pos:79652
+ data_size:83 cout:184
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:207
+ copy to after_sonic position: 15159, after_sonic_pos:80066
+ data_size:80 cout:185
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:110
+ copy to after_sonic position: 15240, after_sonic_pos:80286
+ data_size:93 cout:186
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:204
+ copy to after_sonic position: 15334, after_sonic_pos:80694
+ data_size:87 cout:187
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 15422, after_sonic_pos:81574
+ data_size:89 cout:188
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:123
+ copy to after_sonic position: 15512, after_sonic_pos:81820
+ data_size:83 cout:189
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:141
+ copy to after_sonic position: 15596, after_sonic_pos:82102
+ data_size:81 cout:190
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 15678, after_sonic_pos:82986
+ data_size:79 cout:191
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:63
+ copy to after_sonic position: 15758, after_sonic_pos:83112
+ data_size:82 cout:192
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:341
+ copy to after_sonic position: 15841, after_sonic_pos:83794
+ data_size:77 cout:193
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 15919, after_sonic_pos:83794
+ data_size:75 cout:194
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 15995, after_sonic_pos:84678
+ data_size:75 cout:195
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:212
+ copy to after_sonic position: 16071, after_sonic_pos:85102
+ data_size:78 cout:196
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 16150, after_sonic_pos:85102
+ data_size:79 cout:197
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:248
+ copy to after_sonic position: 16230, after_sonic_pos:85598
+ data_size:84 cout:198
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:192
+ copy to after_sonic position: 16315, after_sonic_pos:85982
+ data_size:81 cout:199
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:358
+ copy to after_sonic position: 16397, after_sonic_pos:86698
+ data_size:77 cout:200
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:400
+ copy to after_sonic position: 16475, after_sonic_pos:87498
+ data_size:84 cout:201
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 16560, after_sonic_pos:87498
+ data_size:80 cout:202
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:305
+ copy to after_sonic position: 16641, after_sonic_pos:88108
+ data_size:77 cout:203
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:275
+ copy to after_sonic position: 16719, after_sonic_pos:88658
+ data_size:80 cout:204
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 16800, after_sonic_pos:88658
+ data_size:74 cout:205
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:389
+ copy to after_sonic position: 16875, after_sonic_pos:89436
+ data_size:84 cout:206
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:389
+ copy to after_sonic position: 16960, after_sonic_pos:90214
+ data_size:81 cout:207
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 17042, after_sonic_pos:90214
+ data_size:74 cout:208
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:326
+ copy to after_sonic position: 17117, after_sonic_pos:90866
+ data_size:83 cout:209
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 17201, after_sonic_pos:90866
+ data_size:83 cout:210
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:331
+ copy to after_sonic position: 17285, after_sonic_pos:91528
+ data_size:75 cout:211
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:339
+ copy to after_sonic position: 17361, after_sonic_pos:92206
+ data_size:78 cout:212
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 17440, after_sonic_pos:92206
+ data_size:72 cout:213
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:340
+ copy to after_sonic position: 17513, after_sonic_pos:92886
+ data_size:73 cout:214
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:339
+ copy to after_sonic position: 17587, after_sonic_pos:93564
+ data_size:81 cout:215
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 17669, after_sonic_pos:93564
+ data_size:79 cout:216
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:340
+ copy to after_sonic position: 17749, after_sonic_pos:94244
+ data_size:87 cout:217
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:343
+ copy to after_sonic position: 17837, after_sonic_pos:94930
+ data_size:89 cout:218
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 17927, after_sonic_pos:94930
+ data_size:86 cout:219
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:346
+ copy to after_sonic position: 18014, after_sonic_pos:95622
+ data_size:83 cout:220
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:346
+ copy to after_sonic position: 18098, after_sonic_pos:96314
+ data_size:79 cout:221
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 18178, after_sonic_pos:96314
+ data_size:78 cout:222
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:345
+ copy to after_sonic position: 18257, after_sonic_pos:97004
+ data_size:85 cout:223
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 18343, after_sonic_pos:97004
+ data_size:84 cout:224
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:344
+ copy to after_sonic position: 18428, after_sonic_pos:97692
+ data_size:88 cout:225
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:343
+ copy to after_sonic position: 18517, after_sonic_pos:98378
+ data_size:82 cout:226
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 18600, after_sonic_pos:98378
+ data_size:82 cout:227
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:341
+ copy to after_sonic position: 18683, after_sonic_pos:99060
+ data_size:80 cout:228
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:341
+ copy to after_sonic position: 18764, after_sonic_pos:99742
+ data_size:84 cout:229
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 18849, after_sonic_pos:99742
+ data_size:80 cout:230
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:342
+ copy to after_sonic position: 18930, after_sonic_pos:100426
+ data_size:75 cout:231
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:342
+ copy to after_sonic position: 19006, after_sonic_pos:101110
+ data_size:78 cout:232
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 19085, after_sonic_pos:101110
+ data_size:77 cout:233
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:352
+ copy to after_sonic position: 19163, after_sonic_pos:101814
+ data_size:86 cout:234
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:351
+ copy to after_sonic position: 19250, after_sonic_pos:102516
+ data_size:87 cout:235
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 19338, after_sonic_pos:102516
+ data_size:88 cout:236
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:352
+ copy to after_sonic position: 19427, after_sonic_pos:103220
+ data_size:72 cout:237
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 19500, after_sonic_pos:103220
+ data_size:72 cout:238
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 19573, after_sonic_pos:104104
+ data_size:79 cout:239
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:233
+ copy to after_sonic position: 19653, after_sonic_pos:104570
+ data_size:74 cout:240
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 19728, after_sonic_pos:104570
+ data_size:70 cout:241
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:362
+ copy to after_sonic position: 19799, after_sonic_pos:105294
+ data_size:66 cout:242
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:179
+ copy to after_sonic position: 19866, after_sonic_pos:105652
+ data_size:72 cout:243
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:205
+ copy to after_sonic position: 19939, after_sonic_pos:106062
+ data_size:70 cout:244
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:247
+ copy to after_sonic position: 20010, after_sonic_pos:106556
+ data_size:65 cout:245
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:137
+ copy to after_sonic position: 20076, after_sonic_pos:106830
+ data_size:69 cout:246
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:347
+ copy to after_sonic position: 20146, after_sonic_pos:107524
+ data_size:74 cout:247
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:210
+ copy to after_sonic position: 20221, after_sonic_pos:107944
+ data_size:71 cout:248
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:257
+ copy to after_sonic position: 20293, after_sonic_pos:108458
+ data_size:73 cout:249
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 20367, after_sonic_pos:108458
+ data_size:69 cout:250
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 20437, after_sonic_pos:109342
+ data_size:73 cout:251
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:101
+ copy to after_sonic position: 20511, after_sonic_pos:109544
+ data_size:81 cout:252
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:360
+ copy to after_sonic position: 20593, after_sonic_pos:110264
+ data_size:83 cout:253
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 20677, after_sonic_pos:110264
+ data_size:81 cout:254
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:354
+ copy to after_sonic position: 20759, after_sonic_pos:110972
+ data_size:83 cout:255
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:339
+ copy to after_sonic position: 20843, after_sonic_pos:111650
+ data_size:75 cout:256
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 20919, after_sonic_pos:111650
+ data_size:82 cout:257
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:169
+ copy to after_sonic position: 21002, after_sonic_pos:111988
+ data_size:82 cout:258
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 21085, after_sonic_pos:112872
+ data_size:81 cout:259
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:361
+ copy to after_sonic position: 21167, after_sonic_pos:113594
+ data_size:79 cout:260
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 21247, after_sonic_pos:113594
+ data_size:81 cout:261
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:308
+ copy to after_sonic position: 21329, after_sonic_pos:114210
+ data_size:84 cout:262
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 21414, after_sonic_pos:114210
+ data_size:87 cout:263
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:311
+ copy to after_sonic position: 21502, after_sonic_pos:114832
+ data_size:87 cout:264
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:319
+ copy to after_sonic position: 21590, after_sonic_pos:115470
+ data_size:90 cout:265
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 21681, after_sonic_pos:116350
+ data_size:88 cout:266
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:203
+ copy to after_sonic position: 21770, after_sonic_pos:116756
+ data_size:90 cout:267
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 21861, after_sonic_pos:116756
+ data_size:90 cout:268
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:149
+ copy to after_sonic position: 21952, after_sonic_pos:117054
+ data_size:89 cout:269
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:249
+ copy to after_sonic position: 22042, after_sonic_pos:117552
+ data_size:84 cout:270
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:198
+ copy to after_sonic position: 22127, after_sonic_pos:117948
+ data_size:87 cout:271
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:114
+ copy to after_sonic position: 22215, after_sonic_pos:118176
+ data_size:92 cout:272
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 22308, after_sonic_pos:119060
+ data_size:83 cout:273
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:144
+ copy to after_sonic position: 22392, after_sonic_pos:119348
+ data_size:82 cout:274
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:358
+ copy to after_sonic position: 22475, after_sonic_pos:120064
+ data_size:79 cout:275
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 22555, after_sonic_pos:120064
+ data_size:79 cout:276
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:362
+ copy to after_sonic position: 22635, after_sonic_pos:120788
+ data_size:81 cout:277
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:159
+ copy to after_sonic position: 22717, after_sonic_pos:121106
+ data_size:85 cout:278
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:126
+ copy to after_sonic position: 22803, after_sonic_pos:121358
+ data_size:81 cout:279
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 22885, after_sonic_pos:122238
+ data_size:77 cout:280
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:68
+ copy to after_sonic position: 22963, after_sonic_pos:122374
+ data_size:79 cout:281
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:290
+ copy to after_sonic position: 23043, after_sonic_pos:122954
+ data_size:81 cout:282
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:202
+ copy to after_sonic position: 23125, after_sonic_pos:123358
+ data_size:78 cout:283
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:110
+ copy to after_sonic position: 23204, after_sonic_pos:123578
+ data_size:88 cout:284
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:174
+ copy to after_sonic position: 23293, after_sonic_pos:123926
+ data_size:85 cout:285
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:435
+ copy to after_sonic position: 23379, after_sonic_pos:124796
+ data_size:88 cout:286
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 23468, after_sonic_pos:124796
+ data_size:85 cout:287
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:297
+ copy to after_sonic position: 23554, after_sonic_pos:125390
+ data_size:86 cout:288
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:303
+ copy to after_sonic position: 23641, after_sonic_pos:125996
+ data_size:91 cout:289
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:308
+ copy to after_sonic position: 23733, after_sonic_pos:126612
+ data_size:79 cout:290
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 23813, after_sonic_pos:126612
+ data_size:82 cout:291
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 23896, after_sonic_pos:127492
+ data_size:81 cout:292
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:186
+ copy to after_sonic position: 23978, after_sonic_pos:127864
+ data_size:81 cout:293
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 24060, after_sonic_pos:127864
+ data_size:83 cout:294
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:320
+ copy to after_sonic position: 24144, after_sonic_pos:128504
+ data_size:81 cout:295
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:334
+ copy to after_sonic position: 24226, after_sonic_pos:129172
+ data_size:82 cout:296
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:339
+ copy to after_sonic position: 24309, after_sonic_pos:129850
+ data_size:88 cout:297
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 24398, after_sonic_pos:129850
+ data_size:90 cout:298
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:347
+ copy to after_sonic position: 24489, after_sonic_pos:130544
+ data_size:87 cout:299
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 24577, after_sonic_pos:130544
+ data_size:90 cout:300
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:356
+ copy to after_sonic position: 24668, after_sonic_pos:131256
+ data_size:88 cout:301
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:366
+ copy to after_sonic position: 24757, after_sonic_pos:131988
+ data_size:79 cout:302
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 24837, after_sonic_pos:131988
+ data_size:82 cout:303
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:382
+ copy to after_sonic position: 24920, after_sonic_pos:132752
+ data_size:86 cout:304
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 25007, after_sonic_pos:132752
+ data_size:79 cout:305
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:390
+ copy to after_sonic position: 25087, after_sonic_pos:133532
+ data_size:84 cout:306
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:396
+ copy to after_sonic position: 25172, after_sonic_pos:134324
+ data_size:88 cout:307
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 25261, after_sonic_pos:134324
+ data_size:92 cout:308
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:392
+ copy to after_sonic position: 25354, after_sonic_pos:135108
+ data_size:88 cout:309
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 25443, after_sonic_pos:135108
+ data_size:85 cout:310
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:433
+ copy to after_sonic position: 25529, after_sonic_pos:135974
+ data_size:71 cout:311
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 25601, after_sonic_pos:135974
+ data_size:71 cout:312
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:395
+ copy to after_sonic position: 25673, after_sonic_pos:136764
+ data_size:61 cout:313
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 25735, after_sonic_pos:136764
+ data_size:67 cout:314
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:248
+ copy to after_sonic position: 25803, after_sonic_pos:137260
+ data_size:64 cout:315
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:390
+ copy to after_sonic position: 25868, after_sonic_pos:138040
+ data_size:63 cout:316
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 25932, after_sonic_pos:138040
+ data_size:70 cout:317
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:390
+ copy to after_sonic position: 26003, after_sonic_pos:138820
+ data_size:62 cout:318
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:430
+ copy to after_sonic position: 26066, after_sonic_pos:139680
+ data_size:67 cout:319
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 26134, after_sonic_pos:139680
+ data_size:73 cout:320
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:353
+ copy to after_sonic position: 26208, after_sonic_pos:140386
+ data_size:75 cout:321
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 26284, after_sonic_pos:140386
+ data_size:80 cout:322
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:256
+ copy to after_sonic position: 26365, after_sonic_pos:140898
+ data_size:76 cout:323
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:185
+ copy to after_sonic position: 26442, after_sonic_pos:141268
+ data_size:76 cout:324
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:394
+ copy to after_sonic position: 26519, after_sonic_pos:142056
+ data_size:70 cout:325
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 26590, after_sonic_pos:142056
+ data_size:68 cout:326
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:436
+ copy to after_sonic position: 26659, after_sonic_pos:142928
+ data_size:70 cout:327
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 26730, after_sonic_pos:142928
+ data_size:70 cout:328
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 26801, after_sonic_pos:143812
+ data_size:73 cout:329
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:120
+ copy to after_sonic position: 26875, after_sonic_pos:144052
+ data_size:74 cout:330
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 26950, after_sonic_pos:144936
+ data_size:74 cout:331
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:8
+ copy to after_sonic position: 27025, after_sonic_pos:144952
+ data_size:82 cout:332
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:110
+ copy to after_sonic position: 27108, after_sonic_pos:145172
+ data_size:73 cout:333
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:296
+ copy to after_sonic position: 27182, after_sonic_pos:145764
+ data_size:87 cout:334
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:290
+ copy to after_sonic position: 27270, after_sonic_pos:146344
+ data_size:83 cout:335
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:243
+ copy to after_sonic position: 27354, after_sonic_pos:146830
+ data_size:76 cout:336
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 27431, after_sonic_pos:146830
+ data_size:72 cout:337
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:240
+ copy to after_sonic position: 27504, after_sonic_pos:147310
+ data_size:72 cout:338
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:305
+ copy to after_sonic position: 27577, after_sonic_pos:147920
+ data_size:75 cout:339
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:305
+ copy to after_sonic position: 27653, after_sonic_pos:148530
+ data_size:76 cout:340
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:417
+ copy to after_sonic position: 27730, after_sonic_pos:149364
+ data_size:78 cout:341
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 27809, after_sonic_pos:149364
+ data_size:74 cout:342
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:287
+ copy to after_sonic position: 27884, after_sonic_pos:149938
+ data_size:71 cout:343
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 27956, after_sonic_pos:149938
+ data_size:70 cout:344
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:296
+ copy to after_sonic position: 28027, after_sonic_pos:150530
+ data_size:73 cout:345
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:161
+ copy to after_sonic position: 28101, after_sonic_pos:150852
+ data_size:71 cout:346
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:192
+ copy to after_sonic position: 28173, after_sonic_pos:151236
+ data_size:79 cout:347
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:396
+ copy to after_sonic position: 28253, after_sonic_pos:152028
+ data_size:68 cout:348
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:110
+ copy to after_sonic position: 28322, after_sonic_pos:152248
+ data_size:67 cout:349
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:404
+ copy to after_sonic position: 28390, after_sonic_pos:153056
+ data_size:76 cout:350
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 28467, after_sonic_pos:153056
+ data_size:76 cout:351
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:388
+ copy to after_sonic position: 28544, after_sonic_pos:153832
+ data_size:79 cout:352
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:385
+ copy to after_sonic position: 28624, after_sonic_pos:154602
+ data_size:74 cout:353
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 28699, after_sonic_pos:154602
+ data_size:81 cout:354
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:385
+ copy to after_sonic position: 28781, after_sonic_pos:155372
+ data_size:78 cout:355
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 28860, after_sonic_pos:155372
+ data_size:76 cout:356
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:263
+ copy to after_sonic position: 28937, after_sonic_pos:155898
+ data_size:84 cout:357
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:263
+ copy to after_sonic position: 29022, after_sonic_pos:156424
+ data_size:76 cout:358
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:328
+ copy to after_sonic position: 29099, after_sonic_pos:157080
+ data_size:76 cout:359
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 29176, after_sonic_pos:157080
+ data_size:82 cout:360
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:328
+ copy to after_sonic position: 29259, after_sonic_pos:157736
+ data_size:78 cout:361
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:410
+ copy to after_sonic position: 29338, after_sonic_pos:158556
+ data_size:93 cout:362
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 29432, after_sonic_pos:158556
+ data_size:99 cout:363
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:143
+ copy to after_sonic position: 29532, after_sonic_pos:158842
+ data_size:94 cout:364
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:229
+ copy to after_sonic position: 29627, after_sonic_pos:159300
+ data_size:92 cout:365
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:229
+ copy to after_sonic position: 29720, after_sonic_pos:159758
+ data_size:95 cout:366
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:395
+ copy to after_sonic position: 29816, after_sonic_pos:160548
+ data_size:101 cout:367
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 29918, after_sonic_pos:160548
+ data_size:97 cout:368
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:199
+ copy to after_sonic position: 30016, after_sonic_pos:160946
+ data_size:98 cout:369
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:422
+ copy to after_sonic position: 30115, after_sonic_pos:161790
+ data_size:94 cout:370
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:437
+ copy to after_sonic position: 30210, after_sonic_pos:162664
+ data_size:96 cout:371
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 30307, after_sonic_pos:162664
+ data_size:100 cout:372
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 30408, after_sonic_pos:163548
+ data_size:97 cout:373
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:8
+ copy to after_sonic position: 30506, after_sonic_pos:163564
+ data_size:95 cout:374
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 30602, after_sonic_pos:164448
+ data_size:96 cout:375
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:8
+ copy to after_sonic position: 30699, after_sonic_pos:164464
+ data_size:99 cout:376
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 30799, after_sonic_pos:164464
+ data_size:95 cout:377
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:235
+ copy to after_sonic position: 30895, after_sonic_pos:164934
+ data_size:100 cout:378
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:433
+ copy to after_sonic position: 30996, after_sonic_pos:165800
+ data_size:97 cout:379
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 31094, after_sonic_pos:165800
+ data_size:94 cout:380
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:294
+ copy to after_sonic position: 31189, after_sonic_pos:166388
+ data_size:94 cout:381
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:226
+ copy to after_sonic position: 31284, after_sonic_pos:166840
+ data_size:90 cout:382
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:400
+ copy to after_sonic position: 31375, after_sonic_pos:167640
+ data_size:90 cout:383
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 31466, after_sonic_pos:167640
+ data_size:88 cout:384
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:411
+ copy to after_sonic position: 31555, after_sonic_pos:168462
+ data_size:98 cout:385
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 31654, after_sonic_pos:168462
+ data_size:94 cout:386
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:411
+ copy to after_sonic position: 31749, after_sonic_pos:169284
+ data_size:89 cout:387
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:411
+ copy to after_sonic position: 31839, after_sonic_pos:170106
+ data_size:87 cout:388
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 31927, after_sonic_pos:170106
+ data_size:82 cout:389
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:419
+ copy to after_sonic position: 32010, after_sonic_pos:170944
+ data_size:89 cout:390
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 32100, after_sonic_pos:170944
+ data_size:90 cout:391
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:433
+ copy to after_sonic position: 32191, after_sonic_pos:171810
+ data_size:74 cout:392
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 32266, after_sonic_pos:171810
+ data_size:72 cout:393
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:349
+ copy to after_sonic position: 32339, after_sonic_pos:172508
+ data_size:72 cout:394
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 32412, after_sonic_pos:172508
+ data_size:66 cout:395
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:320
+ copy to after_sonic position: 32479, after_sonic_pos:173148
+ data_size:71 cout:396
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 32551, after_sonic_pos:174032
+ data_size:69 cout:397
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:144
+ copy to after_sonic position: 32621, after_sonic_pos:174320
+ data_size:69 cout:398
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 32691, after_sonic_pos:174320
+ data_size:74 cout:399
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:244
+ copy to after_sonic position: 32766, after_sonic_pos:174808
+ data_size:72 cout:400
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 32839, after_sonic_pos:175692
+ data_size:66 cout:401
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:222
+ copy to after_sonic position: 32906, after_sonic_pos:176136
+ data_size:71 cout:402
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 32978, after_sonic_pos:176136
+ data_size:71 cout:403
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:316
+ copy to after_sonic position: 33050, after_sonic_pos:176768
+ data_size:70 cout:404
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:119
+ copy to after_sonic position: 33121, after_sonic_pos:177006
+ data_size:75 cout:405
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:306
+ copy to after_sonic position: 33197, after_sonic_pos:177618
+ data_size:73 cout:406
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:279
+ copy to after_sonic position: 33271, after_sonic_pos:178176
+ data_size:71 cout:407
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 33343, after_sonic_pos:178176
+ data_size:69 cout:408
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:279
+ copy to after_sonic position: 33413, after_sonic_pos:178734
+ data_size:71 cout:409
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:321
+ copy to after_sonic position: 33485, after_sonic_pos:179376
+ data_size:77 cout:410
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:327
+ copy to after_sonic position: 33563, after_sonic_pos:180030
+ data_size:71 cout:411
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 33635, after_sonic_pos:180030
+ data_size:81 cout:412
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:323
+ copy to after_sonic position: 33717, after_sonic_pos:180676
+ data_size:76 cout:413
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:198
+ copy to after_sonic position: 33794, after_sonic_pos:181072
+ data_size:95 cout:414
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 33890, after_sonic_pos:181956
+ data_size:90 cout:415
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:56
+ copy to after_sonic position: 33981, after_sonic_pos:182068
+ data_size:94 cout:416
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 34076, after_sonic_pos:182952
+ data_size:90 cout:417
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:226
+ copy to after_sonic position: 34167, after_sonic_pos:183404
+ data_size:88 cout:418
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 34256, after_sonic_pos:183404
+ data_size:88 cout:419
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:261
+ copy to after_sonic position: 34345, after_sonic_pos:183926
+ data_size:92 cout:420
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 34438, after_sonic_pos:183926
+ data_size:90 cout:421
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 34529, after_sonic_pos:184806
+ data_size:73 cout:422
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:132
+ copy to after_sonic position: 34603, after_sonic_pos:185070
+ data_size:72 cout:423
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 34676, after_sonic_pos:185950
+ data_size:67 cout:424
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:161
+ copy to after_sonic position: 34744, after_sonic_pos:186272
+ data_size:75 cout:425
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 34820, after_sonic_pos:186272
+ data_size:73 cout:426
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:263
+ copy to after_sonic position: 34894, after_sonic_pos:186798
+ data_size:73 cout:427
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:110
+ copy to after_sonic position: 34968, after_sonic_pos:187018
+ data_size:70 cout:428
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:304
+ copy to after_sonic position: 35039, after_sonic_pos:187626
+ data_size:70 cout:429
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:310
+ copy to after_sonic position: 35110, after_sonic_pos:188246
+ data_size:70 cout:430
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:312
+ copy to after_sonic position: 35181, after_sonic_pos:188870
+ data_size:76 cout:431
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 35258, after_sonic_pos:188870
+ data_size:72 cout:432
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:145
+ copy to after_sonic position: 35331, after_sonic_pos:189160
+ data_size:75 cout:433
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 35407, after_sonic_pos:190040
+ data_size:71 cout:434
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:202
+ copy to after_sonic position: 35479, after_sonic_pos:190444
+ data_size:93 cout:435
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:111
+ copy to after_sonic position: 35573, after_sonic_pos:190666
+ data_size:92 cout:436
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:220
+ copy to after_sonic position: 35666, after_sonic_pos:191106
+ data_size:90 cout:437
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:244
+ copy to after_sonic position: 35757, after_sonic_pos:191594
+ data_size:76 cout:438
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:126
+ copy to after_sonic position: 35834, after_sonic_pos:191846
+ data_size:74 cout:439
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:247
+ copy to after_sonic position: 35909, after_sonic_pos:192340
+ data_size:73 cout:440
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 35983, after_sonic_pos:193224
+ data_size:66 cout:441
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:127
+ copy to after_sonic position: 36050, after_sonic_pos:193478
+ data_size:78 cout:442
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:227
+ copy to after_sonic position: 36129, after_sonic_pos:193932
+ data_size:86 cout:443
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:227
+ copy to after_sonic position: 36216, after_sonic_pos:194386
+ data_size:81 cout:444
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:304
+ copy to after_sonic position: 36298, after_sonic_pos:194994
+ data_size:86 cout:445
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 36385, after_sonic_pos:194994
+ data_size:84 cout:446
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:309
+ copy to after_sonic position: 36470, after_sonic_pos:195612
+ data_size:78 cout:447
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 36549, after_sonic_pos:196492
+ data_size:80 cout:448
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:185
+ copy to after_sonic position: 36630, after_sonic_pos:196862
+ data_size:72 cout:449
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 36703, after_sonic_pos:196862
+ data_size:82 cout:450
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:317
+ copy to after_sonic position: 36786, after_sonic_pos:197496
+ data_size:78 cout:451
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:322
+ copy to after_sonic position: 36865, after_sonic_pos:198140
+ data_size:77 cout:452
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 36943, after_sonic_pos:198140
+ data_size:86 cout:453
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:440
+ copy to after_sonic position: 37030, after_sonic_pos:199020
+ data_size:79 cout:454
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:211
+ copy to after_sonic position: 37110, after_sonic_pos:199442
+ data_size:79 cout:455
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 37190, after_sonic_pos:199442
+ data_size:79 cout:456
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:330
+ copy to after_sonic position: 37270, after_sonic_pos:200102
+ data_size:76 cout:457
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:335
+ copy to after_sonic position: 37347, after_sonic_pos:200772
+ data_size:77 cout:458
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 37425, after_sonic_pos:200772
+ data_size:73 cout:459
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:341
+ copy to after_sonic position: 37499, after_sonic_pos:201454
+ data_size:85 cout:460
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:339
+ copy to after_sonic position: 37585, after_sonic_pos:202132
+ data_size:83 cout:461
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 37669, after_sonic_pos:202132
+ data_size:81 cout:462
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:345
+ copy to after_sonic position: 37751, after_sonic_pos:202822
+ data_size:76 cout:463
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:350
+ copy to after_sonic position: 37828, after_sonic_pos:203522
+ data_size:75 cout:464
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 37904, after_sonic_pos:203522
+ data_size:77 cout:465
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:360
+ copy to after_sonic position: 37982, after_sonic_pos:204242
+ data_size:85 cout:466
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 38068, after_sonic_pos:204242
+ data_size:82 cout:467
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:369
+ copy to after_sonic position: 38151, after_sonic_pos:204980
+ data_size:81 cout:468
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:387
+ copy to after_sonic position: 38233, after_sonic_pos:205754
+ data_size:85 cout:469
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 38319, after_sonic_pos:205754
+ data_size:84 cout:470
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:395
+ copy to after_sonic position: 38404, after_sonic_pos:206544
+ data_size:82 cout:471
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 38487, after_sonic_pos:206544
+ data_size:89 cout:472
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:428
+ copy to after_sonic position: 38577, after_sonic_pos:207400
+ data_size:89 cout:473
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 38667, after_sonic_pos:207400
+ data_size:90 cout:474
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 38758, after_sonic_pos:208284
+ data_size:70 cout:475
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:2
+ copy to after_sonic position: 38829, after_sonic_pos:208288
+ data_size:68 cout:476
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 38898, after_sonic_pos:209172
+ data_size:79 cout:477
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:162
+ copy to after_sonic position: 38978, after_sonic_pos:209496
+ data_size:71 cout:478
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 39050, after_sonic_pos:209496
+ data_size:64 cout:479
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:224
+ copy to after_sonic position: 39115, after_sonic_pos:209944
+ data_size:72 cout:480
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:223
+ copy to after_sonic position: 39188, after_sonic_pos:210390
+ data_size:66 cout:481
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:223
+ copy to after_sonic position: 39255, after_sonic_pos:210836
+ data_size:69 cout:482
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:402
+ copy to after_sonic position: 39325, after_sonic_pos:211640
+ data_size:73 cout:483
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:247
+ copy to after_sonic position: 39399, after_sonic_pos:212134
+ data_size:70 cout:484
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:0
+ position: 39470, after_sonic_pos:212134
+ data_size:65 cout:485
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:211
+ copy to after_sonic position: 39536, after_sonic_pos:212556
+ data_size:73 cout:486
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:245
+ copy to after_sonic position: 39610, after_sonic_pos:213046
+ data_size:77 cout:487
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:200
+ copy to after_sonic position: 39688, after_sonic_pos:213446
+ data_size:75 cout:488
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:336
+ copy to after_sonic position: 39764, after_sonic_pos:214118
+ data_size:78 cout:489
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:193
+ copy to after_sonic position: 39843, after_sonic_pos:214504
+ data_size:71 cout:490
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:442
+ copy to after_sonic position: 39915, after_sonic_pos:215388
+ data_size:70 cout:491
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:103
+ copy to after_sonic position: 39986, after_sonic_pos:215594
+ data_size:65 cout:492
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:385
+ copy to after_sonic position: 40052, after_sonic_pos:216364
+ data_size:71 cout:493
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 40124, after_sonic_pos:216364
+ data_size:71 cout:494
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:228
+ copy to after_sonic position: 40196, after_sonic_pos:216820
+ data_size:72 cout:495
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:228
+ copy to after_sonic position: 40269, after_sonic_pos:217276
+ data_size:70 cout:496
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:238
+ copy to after_sonic position: 40340, after_sonic_pos:217752
+ data_size:71 cout:497
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:223
+ copy to after_sonic position: 40412, after_sonic_pos:218198
+ data_size:77 cout:498
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:234
+ copy to after_sonic position: 40490, after_sonic_pos:218666
+ data_size:74 cout:499
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:236
+ copy to after_sonic position: 40565, after_sonic_pos:219138
+ data_size:74 cout:500
+ frame_size:480
+ outputSampleLength:442
+ write_res:1
+ read_res:238
+ copy to after_sonic position: 40640, after_sonic_pos:219614
+ data_size:71 cout:501
+ frame_size:480
+ outputSampleLength:440
+ write_res:1
+ read_res:0
+ position: 40712, after_sonic_pos:219614
+ res_len:219614
