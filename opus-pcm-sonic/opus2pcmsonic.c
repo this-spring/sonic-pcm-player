@@ -3,31 +3,9 @@
  * @Company: kaochong
  * @Date: 2020-07-24 18:29:09
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-07-28 10:54:17
- */ 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include "sonic/sonic.h"
-#include "opus/opus.h"
-#include "resample.h"
-
-#define SUCCESS 0;
-#define ERROR -1;
-
-const int MAX_FRAME_SIZE = 6 * 690;
-const int CHANNELS = 1;
-const int INPUT_MAX_LEN = 48000; // opus的长度为：一个字节
-
-opus_int32 output_samples = 48000;
-
-typedef struct Opus2Pcm {
-  OpusDecoder *opus_decoder;
-  rs_data *resample;
-  sonicStream sonic_handle;
-  uint8_t *in_data;
-  uint8_t *out_data;
-} as_opus2pcm_t;
+ * @LastEditTime: 2020-08-05 16:00:41
+*/ 
+#include "opus2pcmsonic.h"
 
 uint8_t* init(int inputSampleRate, int outSampleRate, int numChannel) {
   int err_code = 0;
@@ -39,7 +17,7 @@ uint8_t* init(int inputSampleRate, int outSampleRate, int numChannel) {
   }
   opus2pcm->resample = InitRsData(inputSampleRate, outSampleRate);
   opus2pcm->sonic_handle = sonicCreateStream(outSampleRate, numChannel);
-  sonicSetSpeed(opus2pcm->sonic_handle, 0.75);
+  sonicSetSpeed(opus2pcm->sonic_handle, 1.0);
   // 为in_data和out_data申请空间
   opus2pcm->in_data = (uint8_t *)malloc(sizeof(char) * INPUT_MAX_LEN);
   opus2pcm->out_data = (uint8_t *)malloc(sizeof(char) * INPUT_MAX_LEN);
@@ -63,16 +41,16 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
   // copy sonic后结果
   int after_sonic_pos = 0;
   uint8_t after_sonic[4410 * 5 * 100];
-  printf(" input_len:%d\n", input_len);
+  // printf(" input_len:%d\n", input_len);
   int cout = 0;
   while (position < input_len && cout <= 500) {
     cout += 1;
     data_size = o2p_p->in_data[position];
-    printf(" data_size:%d cout:%d position:%d\n", data_size, cout, position);
+    // printf(" data_size:%d cout:%d position:%d\n", data_size, cout, position);
     memcpy(payload_content, o2p_p->in_data + position + 1, data_size);
     // 解码opus
     frame_size = opus_decode(o2p_p->opus_decoder, payload_content, data_size, pcm_content, output_samples, 0);
-    printf(" frame_size:%d\n", frame_size);
+    // printf(" frame_size:%d\n", frame_size);
     unsigned char pcm_bytes[frame_size * CHANNELS * 2];
     if (frame_size < 0) {
       return ERROR;
@@ -86,26 +64,130 @@ int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) 
     uint8_t after_reasmple[48000];
     int outputSampleLength = SrcLinear3((short *)pcm_bytes, (short *)after_reasmple, i, 2, o2p_p->resample);
 
-    printf(" outputSampleLength:%d\n", outputSampleLength);
+    // printf(" outputSampleLength:%d\n", outputSampleLength);
     // sonic倍速
     int write_res = sonicWriteShortToStream(o2p_p->sonic_handle, (short *)after_reasmple, outputSampleLength);
-    printf(" write_res:%d\n", write_res);
+    // printf(" write_res:%d\n", write_res);
     if (write_res != 1) {
       return ERROR;
     }
     unsigned char sonic_res[44100 * 2];
     int read_res = sonicReadShortFromStream(o2p_p->sonic_handle, (short *)sonic_res, outputSampleLength);
-    printf(" read_res:%d\n", read_res);
+    // printf(" read_res:%d\n", read_res);
     if (read_res != 0) {
-      printf(" copy to after_sonic");
+      // printf(" copy to after_sonic");
       memcpy(after_sonic + after_sonic_pos, sonic_res, read_res * 2);
       after_sonic_pos += read_res * 2;
     }
     position += 1 + data_size;
-    printf(" position: %d, after_sonic_pos:%d\n", position, after_sonic_pos);
+    // printf(" position: %d, after_sonic_pos:%d\n", position, after_sonic_pos);
   }
   memcpy(output, after_sonic, after_sonic_pos);
   return after_sonic_pos;
+}
+
+// **************************Pcm2Opus部分**************************
+
+uint8_t* OpusInitEncoder(uint32_t frame_size, int inRate, int outRate) {
+        
+    int inSampleRate = inRate;
+    int outSampleRate = outRate;
+    as_resample_t *resample_point = (as_resample_t *)malloc(sizeof(as_resample_t));
+    resample_point->resample = InitRsData(inSampleRate, outSampleRate);
+
+    int err = 0;
+    int complexity = 1;
+    opus_int32 bitrate_bps = 64000;
+    as_o2p_encoder_t *o2p_encoder = (as_o2p_encoder_t *)malloc(sizeof(as_o2p_encoder_t));
+    // printf("OpusInitEncoder SAMPLE_RATE:%d, CHANNLE_NUM:%d\n", SAMPLE_RATE, CHANNEL_NUM);
+    o2p_encoder->encoder = opus_encoder_create(SAMPLE_RATE, CHANNEL_NUM, OPUS_APPLICATION_VOIP, &err);
+    o2p_encoder->max_data_bytes = (frame_size << 1);
+    o2p_encoder->frame_size = frame_size;
+    o2p_encoder->in_data = (input_data_t *)malloc(sizeof(input_data_t) + frame_size * 10);
+    o2p_encoder->out_data = (output_data_t *)malloc(sizeof(output_data_t) + 1024 * 1024 * 2);
+
+    if (err != OPUS_OK) {
+        printf("cannot create opus encoder, code:%d, error_message:%s\n", err, opus_strerror(err));
+        return NULL;
+    }
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_BANDWIDTH(OPUS_BANDWIDTH_WIDEBAND));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_BITRATE(bitrate_bps));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_VBR(1));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_COMPLEXITY(complexity));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_INBAND_FEC(0));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_FORCE_CHANNELS(OPUS_AUTO));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_DTX(0));
+    opus_encoder_ctl(o2p_encoder->encoder, OPUS_SET_LSB_DEPTH(16));
+
+    as_o2p_resample_t *o2p_resample = (as_o2p_resample_t *)malloc(sizeof(as_o2p_resample_t));
+    o2p_resample->encoder = o2p_encoder;
+    o2p_resample->resample = resample_point;
+    return (uint8_t *)o2p_resample;
+}
+
+int PCMEncoderData(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) {
+
+    as_o2p_resample_t *o2p_resample = (as_o2p_resample_t *)dec;
+    as_o2p_encoder_t *p2o_encoder = o2p_resample->encoder;
+    as_resample_t *resample_point = o2p_resample->resample;
+
+    memcpy((uint8_t *)resample_point->in_data, input, input_len * 2);
+    
+    int outputSampleLength = SrcLinear3((short *)resample_point->in_data, (short *)resample_point->out_data, input_len, 2, resample_point->resample);
+    // printf("PCMEncoderData before SrcLinear3 input_len:%d outputlen %d\n", input_len, outputSampleLength);
+
+    // 实现resample返给js 方便调试resample后的数据
+    // memcpy(output, (uint8_t *) resample_point->out_data, outputSampleLength * 2);
+    // return 2 * outputSampleLength;
+
+    memcpy((pcm + encode_pcm_buffer_position), (uint8_t *)resample_point->out_data, outputSampleLength * 2);
+    encode_pcm_buffer_position += 2 * outputSampleLength;
+
+    // printf("before encode pcm data len %d encode pcm samples %d\n", encode_pcm_buffer_position, encode_pcm_buffer_size);
+    int flag = -1;
+    int return_opus_len = 0;
+    while(1) {
+        // printf("encode_pcm_encode_count:%d, return_opus_len:%d \n", encode_pcm_encode_count, return_opus_len);
+
+        if (encode_pcm_buffer_position < (encode_pcm_buffer_size * 2)) {
+            break;
+        } else {
+            int ret = opus_encode(p2o_encoder->encoder, (opus_int16 *)pcm, encode_pcm_buffer_size,
+                p2o_encoder->out_data->data, p2o_encoder->max_data_bytes);
+
+            memcpy(pcm, (pcm + (encode_pcm_buffer_size * 2)), encode_pcm_buffer_position - (encode_pcm_buffer_size * 2));
+            encode_pcm_buffer_position -= (encode_pcm_buffer_size * 2);
+            if (ret < 0) {
+                printf("error, PCMEncoderData ret < 0, error message:%s \n", opus_strerror(ret));
+            } else {
+                encode_pcm_encode_count ++;
+                // printf("PCMEncoderData ret:%d\n", ret);
+                *(output + encode_output_len) = ret;
+                memcpy((output + encode_output_len + 1), p2o_encoder->out_data->data, ret);
+                encode_output_len += ret + 1;
+            }
+        }
+        if ((encode_pcm_encode_count) % 10 == 0) {
+            flag = 1;
+            return_opus_len = encode_output_len;
+            encode_output_len = 0;
+            // printf("encode_pcm_encode_count:%d, return_opus_len:%d \n", encode_pcm_encode_count, return_opus_len);
+            break;
+        }
+    }
+    // printf("after encode pcm data left len %d output len %d\n", encode_pcm_buffer_position, output_len);
+    // return output_len; 
+    if (flag == 1) {
+        flag = -1;
+        return return_opus_len;
+    } else {
+        return -1;
+    }
+}
+
+void resetPcmEncode() {
+    encode_output_len = 0;
+    encode_pcm_buffer_position = 0;
 }
 
 // int main() {

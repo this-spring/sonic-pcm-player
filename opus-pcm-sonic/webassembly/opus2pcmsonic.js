@@ -1860,7 +1860,7 @@ var ASM_CONSTS = [];
 
 STATIC_BASE = GLOBAL_BASE;
 
-STATICTOP = STATIC_BASE + 34480;
+STATICTOP = STATIC_BASE + 49920;
 /* global initializers */  __ATINIT__.push();
 
 
@@ -1869,7 +1869,7 @@ STATICTOP = STATIC_BASE + 34480;
 
 
 
-var STATIC_BUMP = 34480;
+var STATIC_BUMP = 49920;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 
@@ -2049,9 +2049,25 @@ function copyTempDouble(ptr) {
 
   var _llvm_ctlz_i32=true;
 
+  
+  function _llvm_exp2_f32(x) {
+      return Math.pow(2, x);
+    }function _llvm_exp2_f64() {
+  return _llvm_exp2_f32.apply(null, arguments)
+  }
+
   var _llvm_fabs_f32=Math_abs;
 
   var _llvm_floor_f32=Math_floor;
+
+  var _llvm_floor_f64=Math_floor;
+
+  
+  function _llvm_log10_f32(x) {
+      return Math.log(x) / Math.LN10; // TODO: Math.log10, when browser support is there
+    }function _llvm_log10_f64() {
+  return _llvm_log10_f32.apply(null, arguments)
+  }
 
   function _llvm_stackrestore(p) {
       var self = _llvm_stacksave;
@@ -2135,14 +2151,17 @@ function intArrayToString(array) {
 
 
 
-var debug_table_X = ["0", "asm['___stdio_close']", "asm['___stdio_write']", "asm['___stdio_seek']", "asm['___stdout_write']", "0", "0", "0"];
+var debug_table_X = ["0", "asm['___stdio_close']", "asm['___stdio_write']", "asm['___stdio_seek']", "asm['___stdout_write']", "asm['_downmix_int']", "0", "0"];
 var debug_table_ii = [];
 var debug_table_iiii = [];
-function nullFunc_X(x) { err("Invalid function pointer '" + x + "' called with signature 'X'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: ii: " + debug_table_ii[x] + "  iiii: " + debug_table_iiii[x] + "  "); abort(x) }
+var debug_table_viiiiiii = [];
+function nullFunc_X(x) { err("Invalid function pointer '" + x + "' called with signature 'X'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: ii: " + debug_table_ii[x] + "  iiii: " + debug_table_iiii[x] + "  viiiiiii: " + debug_table_viiiiiii[x] + "  "); abort(x) }
 
-function nullFunc_ii(x) { err("Invalid function pointer '" + x + "' called with signature 'ii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: iiii: " + debug_table_iiii[x] + "  X: " + debug_table_X[x] + "  "); abort(x) }
+function nullFunc_ii(x) { err("Invalid function pointer '" + x + "' called with signature 'ii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: iiii: " + debug_table_iiii[x] + "  X: " + debug_table_X[x] + "  viiiiiii: " + debug_table_viiiiiii[x] + "  "); abort(x) }
 
-function nullFunc_iiii(x) { err("Invalid function pointer '" + x + "' called with signature 'iiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: ii: " + debug_table_ii[x] + "  X: " + debug_table_X[x] + "  "); abort(x) }
+function nullFunc_iiii(x) { err("Invalid function pointer '" + x + "' called with signature 'iiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: ii: " + debug_table_ii[x] + "  X: " + debug_table_X[x] + "  viiiiiii: " + debug_table_viiiiiii[x] + "  "); abort(x) }
+
+function nullFunc_viiiiiii(x) { err("Invalid function pointer '" + x + "' called with signature 'viiiiiii'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this)");  err("This pointer might make sense in another type signature: iiii: " + debug_table_iiii[x] + "  ii: " + debug_table_ii[x] + "  X: " + debug_table_X[x] + "  "); abort(x) }
 
 Module['wasmTableSize'] = 8;
 
@@ -2194,6 +2213,21 @@ function ftCall_iiii(x, a0, a1, a2) {
   return Module['asm']['dynCall_iiii'](x, a0, a1, a2);
 }
 
+function invoke_viiiiiii(index,a1,a2,a3,a4,a5,a6,a7) {
+  var sp = stackSave();
+  try {
+    Module["dynCall_viiiiiii"](index,a1,a2,a3,a4,a5,a6,a7);
+  } catch(e) {
+    stackRestore(sp);
+    if (typeof e !== 'number' && e !== 'longjmp') throw e;
+    Module["setThrew"](1, 0);
+  }
+}
+
+function ftCall_viiiiiii(x, a0, a1, a2, a3, a4, a5, a6) {
+  return Module['asm']['dynCall_viiiiiii'](x, a0, a1, a2, a3, a4, a5, a6);
+}
+
 
 var dynCall_X = ftCall_X;
 
@@ -2204,9 +2238,12 @@ var dynCall_ii = ftCall_ii;
 var dynCall_iiii = ftCall_iiii;
 
 
+var dynCall_viiiiiii = ftCall_viiiiiii;
+
+
 Module.asmGlobalArg = {};
 
-Module.asmLibraryArg = { "abort": abort, "assert": assert, "enlargeMemory": enlargeMemory, "getTotalMemory": getTotalMemory, "abortOnCannotGrowMemory": abortOnCannotGrowMemory, "abortStackOverflow": abortStackOverflow, "nullFunc_X": nullFunc_X, "nullFunc_ii": nullFunc_ii, "nullFunc_iiii": nullFunc_iiii, "invoke_X": invoke_X, "invoke_ii": invoke_ii, "invoke_iiii": invoke_iiii, "___lock": ___lock, "___setErrNo": ___setErrNo, "___syscall140": ___syscall140, "___syscall146": ___syscall146, "___syscall54": ___syscall54, "___syscall6": ___syscall6, "___unlock": ___unlock, "__exit": __exit, "_emscripten_memcpy_big": _emscripten_memcpy_big, "_exit": _exit, "_llvm_cttz_i32": _llvm_cttz_i32, "_llvm_fabs_f32": _llvm_fabs_f32, "_llvm_floor_f32": _llvm_floor_f32, "_llvm_stackrestore": _llvm_stackrestore, "_llvm_stacksave": _llvm_stacksave, "flush_NO_FILESYSTEM": flush_NO_FILESYSTEM, "DYNAMICTOP_PTR": DYNAMICTOP_PTR, "tempDoublePtr": tempDoublePtr, "STACKTOP": STACKTOP, "STACK_MAX": STACK_MAX };
+Module.asmLibraryArg = { "abort": abort, "assert": assert, "enlargeMemory": enlargeMemory, "getTotalMemory": getTotalMemory, "abortOnCannotGrowMemory": abortOnCannotGrowMemory, "abortStackOverflow": abortStackOverflow, "nullFunc_X": nullFunc_X, "nullFunc_ii": nullFunc_ii, "nullFunc_iiii": nullFunc_iiii, "nullFunc_viiiiiii": nullFunc_viiiiiii, "invoke_X": invoke_X, "invoke_ii": invoke_ii, "invoke_iiii": invoke_iiii, "invoke_viiiiiii": invoke_viiiiiii, "___lock": ___lock, "___setErrNo": ___setErrNo, "___syscall140": ___syscall140, "___syscall146": ___syscall146, "___syscall54": ___syscall54, "___syscall6": ___syscall6, "___unlock": ___unlock, "__exit": __exit, "_emscripten_memcpy_big": _emscripten_memcpy_big, "_exit": _exit, "_llvm_cttz_i32": _llvm_cttz_i32, "_llvm_exp2_f32": _llvm_exp2_f32, "_llvm_exp2_f64": _llvm_exp2_f64, "_llvm_fabs_f32": _llvm_fabs_f32, "_llvm_floor_f32": _llvm_floor_f32, "_llvm_floor_f64": _llvm_floor_f64, "_llvm_log10_f32": _llvm_log10_f32, "_llvm_log10_f64": _llvm_log10_f64, "_llvm_stackrestore": _llvm_stackrestore, "_llvm_stacksave": _llvm_stacksave, "flush_NO_FILESYSTEM": flush_NO_FILESYSTEM, "DYNAMICTOP_PTR": DYNAMICTOP_PTR, "tempDoublePtr": tempDoublePtr, "STACKTOP": STACKTOP, "STACK_MAX": STACK_MAX };
 // EMSCRIPTEN_START_ASM
 var asm =Module["asm"]// EMSCRIPTEN_END_ASM
 (Module.asmGlobalArg, Module.asmLibraryArg, buffer);
@@ -2215,6 +2252,18 @@ var real__MakePcmStream = asm["_MakePcmStream"]; asm["_MakePcmStream"] = functio
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return real__MakePcmStream.apply(null, arguments);
+};
+
+var real__OpusInitEncoder = asm["_OpusInitEncoder"]; asm["_OpusInitEncoder"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real__OpusInitEncoder.apply(null, arguments);
+};
+
+var real__PCMEncoderData = asm["_PCMEncoderData"]; asm["_PCMEncoderData"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real__PCMEncoderData.apply(null, arguments);
 };
 
 var real____errno_location = asm["___errno_location"]; asm["___errno_location"] = function() {
@@ -2313,6 +2362,12 @@ var real__sbrk = asm["_sbrk"]; asm["_sbrk"] = function() {
   return real__sbrk.apply(null, arguments);
 };
 
+var real__setSpeed = asm["_setSpeed"]; asm["_setSpeed"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return real__setSpeed.apply(null, arguments);
+};
+
 var real_establishStackSpace = asm["establishStackSpace"]; asm["establishStackSpace"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
@@ -2359,6 +2414,14 @@ var _MakePcmStream = Module["_MakePcmStream"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["_MakePcmStream"].apply(null, arguments) };
+var _OpusInitEncoder = Module["_OpusInitEncoder"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["_OpusInitEncoder"].apply(null, arguments) };
+var _PCMEncoderData = Module["_PCMEncoderData"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["_PCMEncoderData"].apply(null, arguments) };
 var ___errno_location = Module["___errno_location"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
@@ -2435,6 +2498,10 @@ var _sbrk = Module["_sbrk"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
   return Module["asm"]["_sbrk"].apply(null, arguments) };
+var _setSpeed = Module["_setSpeed"] = function() {
+  assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
+  assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
+  return Module["asm"]["_setSpeed"].apply(null, arguments) };
 var establishStackSpace = Module["establishStackSpace"] = function() {
   assert(runtimeInitialized, 'you need to wait for the runtime to be ready (e.g. wait for main() to be called)');
   assert(!runtimeExited, 'the runtime was exited (use NO_EXIT_RUNTIME to keep it alive after main() exits)');
@@ -2472,23 +2539,23 @@ function b1() {
  ; nullFunc_X(0);return +0;
 }
 function b2() {
- ; nullFunc_X(5);return +0;
-}
-function b3() {
  ; nullFunc_X(6);return +0;
 }
-function b4() {
+function b3() {
  ; nullFunc_X(7);return +0;
 }
 
 
 
-var FUNCTION_TABLE_X = [b1,asm['___stdio_close'],asm['___stdio_write'],asm['___stdio_seek'],asm['___stdout_write'],b2,b3,b4];
+
+var FUNCTION_TABLE_X = [b1,asm['___stdio_close'],asm['___stdio_write'],asm['___stdio_seek'],asm['___stdout_write'],asm['_downmix_int'],b2,b3];
+
 
 
 Module["dynCall_X"] = dynCall_X
 Module["dynCall_ii"] = dynCall_ii
 Module["dynCall_iiii"] = dynCall_iiii
+Module["dynCall_viiiiiii"] = dynCall_viiiiiii
 ;
 
 
@@ -2754,7 +2821,6 @@ function abort(what) {
   throw output;
 }
 Module['abort'] = abort;
-Module['onRuntimeInitialized'] = onRuntimeInitialized;
 
 if (Module['preInit']) {
   if (typeof Module['preInit'] == 'function') Module['preInit'] = [Module['preInit']];

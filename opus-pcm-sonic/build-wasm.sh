@@ -3,7 +3,7 @@
  # @Company: kaochong
  # @Date: 2020-04-07 12:10:05
  # @LastEditors: xiuquanxu
- # @LastEditTime: 2020-07-27 19:34:36
+ # @LastEditTime: 2020-08-05 18:04:20
  ###
 echo "----------------------------"
 echo "start building"
@@ -24,7 +24,7 @@ emcc    ./opus2pcmsonic.c  \
         -s "MODULARIZE=1" \
         -s "EXPORT_NAME='WebOPSnoic'" \
         -s "BINARYEN_METHOD='native-wasm'" \
-        -s "EXPORTED_FUNCTIONS=['_init', '_MakePcmStream']" \
+        -s "EXPORTED_FUNCTIONS=['_init', '_MakePcmStream', '_setSpeed', '_PCMEncoderData', '_OpusInitEncoder']" \
         -s EXTRA_EXPORTED_RUNTIME_METHODS='["ccall", "cwrap"]' \
         -o ./webassembly/opus2pcmsonic.js \
         -Wall \
