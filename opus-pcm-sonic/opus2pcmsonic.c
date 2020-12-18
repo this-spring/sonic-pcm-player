@@ -3,7 +3,7 @@
  * @Company: kaochong
  * @Date: 2020-07-24 18:29:09
  * @LastEditors: xiuquanxu
- * @LastEditTime: 2020-08-05 16:00:41
+ * @LastEditTime: 2020-12-18 12:28:47
 */ 
 #include "opus2pcmsonic.h"
 
@@ -24,10 +24,13 @@ uint8_t* init(int inputSampleRate, int outSampleRate, int numChannel) {
   return (uint8_t *)opus2pcm;
 }
 
-
 void setSpeed(uint8_t* dec, int speed) {
   as_opus2pcm_t *o2p_p = (as_opus2pcm_t *)dec;
-  sonicSetSpeed(o2p_p->sonic_handle, speed);
+  printf(" setSpeed speed:%d\n", speed);
+  // 由于wasm和js之间只能传递int类型，所以这里做一个*10操作，在c层在做一个/10操作
+  float rspeed = (float)speed / 100;
+  printf(" setSpeed rspeed:%f\n", rspeed);
+  sonicSetSpeed(o2p_p->sonic_handle, rspeed);
 }
 
 int MakePcmStream(uint8_t* dec, uint8_t* input, int input_len, uint8_t* output) {

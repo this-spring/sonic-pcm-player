@@ -183,7 +183,7 @@ static void scaleSamples(short* samples, int numSamples, float volume) {
 float sonicGetSpeed(sonicStream stream) { return stream->speed; }
 
 /* Set the speed of the stream. */
-void sonicSetSpeed(sonicStream stream, float speed) { stream->speed = speed; }
+void sonicSetSpeed(sonicStream stream, float speed) { printf("speed:%f\n", speed); stream->speed = speed; }
 
 /* Get the pitch of the stream. */
 float sonicGetPitch(sonicStream stream) { return stream->pitch; }
