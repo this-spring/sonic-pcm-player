@@ -23,7 +23,9 @@ open url:  https://this-spring.github.io/sonic-pcm-player/index.html
 
 click 选择文件->获取buffer->start  
 
-### sonic build  
+default rate: 1
+
+## sonic build  
 
 1. git clone https://github.com/waywardgeek/sonic.git  
 
